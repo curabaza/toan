@@ -48,6 +48,17 @@ const quizData = [
         question: "Nguyễn Tấn Thành sinh năm nào?",
         choices: ["2024", "2013", "2023", "2002"],
         correct: "2023"
+    },
+	    },
+    {
+        question: "Từ nhà đến trường là 40km thì từ trường đến UBND tỉnh Quảng Ngãi là bao nhiêu ? biết tổng quảng đường là 100km",
+        choices: ["80km", "60km", "70km", "50km"],
+        correct: "60km"
+    },
+	{
+        question: "Dưới thời vua nào diện tích nước Việt Nam lớn nhất?",
+        choices: ["vua Quang Trung", "vua Gia Long", "vua Minh Mạng", "vua Thành Thái"],
+        correct: "vua Minh Mạng"
     }
 ];
 
