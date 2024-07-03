@@ -114,7 +114,7 @@ function nextQuestion() {
     if (currentQuestionIndex < quizData.length) {
         loadQuestion();
     } else {
-        document.getElementById("quiz").innerHTML = "<h2>Chúc mừng! Bạn đã hoàn thành tất cả các câu hỏi.</h2>";
+        document.getElementById("quiz").innerHTML = "<h2>chúng mừng bạn được 20k của mít =))).</h2>";
     }
 }
 
