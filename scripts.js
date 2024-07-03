@@ -29,7 +29,7 @@ const quizData = [
         choices: ["1915", "1917", "1919", "1921"],
         correct: "1917"
     },
-	 {
+    {
         question: "Nhà Nguyễn Tấn Phát có bao nhiêu người?",
         choices: ["1", "2", "3", "5"],
         correct: "5"
@@ -39,7 +39,7 @@ const quizData = [
         choices: ["2015", "2013", "2017", "2002"],
         correct: "2015"
     },
-	 {
+    {
         question: "Nguyễn Tấn Phát sinh năm nào?",
         choices: ["2015", "2013", "2017", "2002"],
         correct: "2013"
@@ -49,13 +49,12 @@ const quizData = [
         choices: ["2024", "2013", "2023", "2002"],
         correct: "2023"
     },
-	
     {
         question: "Từ nhà đến trường là 40km thì từ trường đến UBND tỉnh Quảng Ngãi là bao nhiêu ? biết tổng quảng đường là 100km",
         choices: ["80km", "60km", "70km", "50km"],
         correct: "60km"
     },
-	{
+    {
         question: "Dưới thời vua nào diện tích nước Việt Nam lớn nhất?",
         choices: ["vua Quang Trung", "vua Gia Long", "vua Minh Mạng", "vua Thành Thái"],
         correct: "vua Minh Mạng"
@@ -63,6 +62,7 @@ const quizData = [
 ];
 
 let currentQuestionIndex = 0;
+let correctAnswers = 0;
 
 function loadQuestion() {
     const currentQuestion = quizData[currentQuestionIndex];
@@ -99,6 +99,7 @@ function checkAnswer() {
 
     const result = document.getElementById("result");
     if (selectedChoice === quizData[currentQuestionIndex].correct) {
+        correctAnswers++;
         result.innerText = "Chính xác! Bạn đã trả lời đúng.";
         result.style.color = "green";
     } else {
@@ -114,7 +115,12 @@ function nextQuestion() {
     if (currentQuestionIndex < quizData.length) {
         loadQuestion();
     } else {
-        document.getElementById("quiz").innerHTML = "<h2>chúng mừng bạn được 20k của mít =))).</h2>";
+        const quiz = document.getElementById("quiz");
+        if (correctAnswers === quizData.length) {
+            quiz.innerHTML = "<h2>Chúc mừng bạn đã nhận được 20k của mít!</h2>";
+        } else {
+            quiz.innerHTML = `<h2>Bạn đã trả lời đúng ${correctAnswers}/${quizData.length} câu. Chúc bạn may mắn lần sau!</h2>`;
+        }
     }
 }
 
