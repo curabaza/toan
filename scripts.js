@@ -58,7 +58,18 @@ const quizData = [
         question: "Dưới thời vua nào diện tích nước Việt Nam lớn nhất?",
         choices: ["vua Quang Trung", "vua Gia Long", "vua Minh Mạng", "vua Thành Thái"],
         correct: "vua Minh Mạng"
+    },
+    {
+        question: "có một đàng voi bị hư tai một con chết hỏi còn bao nhiêu con?",
+        choices: ["24", "35", "13", "23"],
+        correct: "23"
+    },
+    {
+        question: "0101 là gì?",
+        choices: ["là bật tắt", "mã số", "cơ số", "số tử"],
+        correct: "là bật tắt"
     }
+    
 ];
 
 let currentQuestionIndex = 0;
