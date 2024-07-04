@@ -130,7 +130,7 @@ function nextQuestion() {
         if (correctAnswers === quizData.length) {
             quiz.innerHTML = "<h2>Chúc mừng bạn đã nhận được 20k của mít!</h2>";
         } else {
-            quiz.innerHTML = `<h2>Bạn đã trả lời đúng ${correctAnswers}/${quizData.length} câu. Chúc bạn may mắn lần sau!</h2>`;
+            quiz.innerHTML = `<h2>Bạn đã trả lời đúng ${correctAnswers}/${quizData.length} câu. chúc bạn mất 20k hihi :))))!</h2>`;
         }
     }
 }
