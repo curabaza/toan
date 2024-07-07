@@ -114,7 +114,7 @@ function checkAnswer() {
         result.innerText = "Chính xác! Bạn đã trả lời đúng.";
         result.style.color = "green";
     } else {
-        result.innerText = "Sai rồi. Hãy thử lại!";
+        result.innerText = "Sai rồi. ngu quá :))!";
         result.style.color = "red";
     }
     document.getElementById("submit").style.display = "none";
