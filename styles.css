@@ -7,7 +7,7 @@ body {
 
 header {
     background-color: #4CAF50;
-    color: blue;
+    color: white;
     text-align: center;
     padding: 1em 0;
 }
@@ -29,7 +29,7 @@ section#quiz {
 
 button {
     background-color: #4CAF50;
-    color: blue;
+    color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
