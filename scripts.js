@@ -114,7 +114,7 @@ function checkAnswer() {
         result.innerText = "Chính xác! Bạn đã trả lời đúng.";
         result.style.color = "green";
     } else {
-        result.innerText = "ngu quá !";
+        result.innerText = "Sai rồi. Hãy thử lại!";
         result.style.color = "red";
     }
     document.getElementById("submit").style.display = "none";
@@ -128,7 +128,7 @@ function nextQuestion() {
     } else {
         const quiz = document.getElementById("quiz");
         if (correctAnswers === quizData.length) {
-            quiz.innerHTML = "<h2>Chúc mừng bạn đã nhận được 20k của mít!</h2>";
+            quiz.innerHTML = "<h2>chúc bạn mây mắng lằn sau!</h2>";
         } else {
             quiz.innerHTML = `<h2>Bạn đã trả lời đúng ${correctAnswers}/${quizData.length} câu. chúc bạn may mắng lần sau :))))!</h2>`;
         }
